@@ -1,0 +1,1045 @@
+ *
+ *   			
+ * TEST PLAN:
+ * 
+ * 
+ * 		Normal Case:
+ * 			- maze is solvable
+ *  original maze:
+ *  6 6
+ *	W W W W W W
+ * 	 W W M W W W
+ *	W W O O O W
+ *   W W W O O W
+ *	W W C W O W
+ * 	 W W O O W W 
+ *	W W W W W W
+ *
+ *
+ map loaded: 
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W O O O W W 
+  W W W W O O W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+Now we will try to solve it... 
+
+entry at: 2, 3
+exit at: 5, 3
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W O O O W W 
+  W W W W O O W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W X O O W W 
+  W W W W O O W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . X O W W 
+  W W W W O O W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . O W W 
+  W W W W X O W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . O W W 
+  W W W W . O W W 
+ W W W C W X W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . O W W 
+  W W W W . O W W 
+ W W W C W . W W 
+  W W W O X W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . O W W 
+  W W W W . O W W 
+ W W W C W . W W 
+  W W W X . W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . O W W 
+  W W W W . O W W 
+ W W W S W . W W 
+  W W W . . W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+Maze Successful: 
+Solved in 7 steps
+
+
+
+ ******************************************************************************
+ *		Normal Case:
+ * 			- maze is solvable with backtracking
+ *
+ *original maze:
+ * 10 10
+ *	W W M W W W O O O W
+ *	 W O W O W O O O O W
+ *	W O W O O W W O O W
+ *	 W O W O W W O O W W
+ *	W O W O O O O W O W
+ *	 W O W O W W O W O W
+ *	W O W O W W W O W W
+ *	 W O W O O W C O W W
+ *	W O O W O O W W W W
+ *	 W O O O W O O O O W
+ *
+ *map loaded: 
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W O W O W O O O O W W 
+ W W O W O O W W O O W W 
+  W W O W O W W O O W W W 
+ W W O W O O O O W O W W 
+  W W O W O W W O W O W W 
+ W W O W O W W W O W W W 
+  W W O W O O W C O W W W 
+ W W O O W O O W W W W W 
+  W W O O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+Now we will try to solve it... 
+
+entry at: 1, 3
+exit at: 8, 7
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W O W O W O O O O W W 
+ W W O W O O W W O O W W 
+  W W O W O W W O O W W W 
+ W W O W O O O O W O W W 
+  W W O W O W W O W O W W 
+ W W O W O W W W O W W W 
+  W W O W O O W C O W W W 
+ W W O O W O O W W W W W 
+  W W O O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W X W O W O O O O W W 
+ W W O W O O W W O O W W 
+  W W O W O W W O O W W W 
+ W W O W O O O O W O W W 
+  W W O W O W W O W O W W 
+ W W O W O W W W O W W W 
+  W W O W O O W C O W W W 
+ W W O O W O O W W W W W 
+  W W O O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W X W O O W W O O W W 
+  W W O W O W W O O W W W 
+ W W O W O O O O W O W W 
+  W W O W O W W O W O W W 
+ W W O W O W W W O W W W 
+  W W O W O O W C O W W W 
+ W W O O W O O W W W W W 
+  W W O O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W X W O W W O O W W W 
+ W W O W O O O O W O W W 
+  W W O W O W W O W O W W 
+ W W O W O W W W O W W W 
+  W W O W O O W C O W W W 
+ W W O O W O O W W W W W 
+  W W O O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W X W O O O O W O W W 
+  W W O W O W W O W O W W 
+ W W O W O W W W O W W W 
+  W W O W O O W C O W W W 
+ W W O O W O O W W W W W 
+  W W O O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W X W O W W O W O W W 
+ W W O W O W W W O W W W 
+  W W O W O O W C O W W W 
+ W W O O W O O W W W W W 
+  W W O O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W O W W O W O W W 
+ W W X W O W W W O W W W 
+  W W O W O O W C O W W W 
+ W W O O W O O W W W W W 
+  W W O O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W O W W O W O W W 
+ W W . W O W W W O W W W 
+  W W X W O O W C O W W W 
+ W W O O W O O W W W W W 
+  W W O O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W O W W O W O W W 
+ W W . W O W W W O W W W 
+  W W . W O O W C O W W W 
+ W W X O W O O W W W W W 
+  W W O O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W O W W O W O W W 
+ W W . W O W W W O W W W 
+  W W . W O O W C O W W W 
+ W W . O W O O W W W W W 
+  W W X O O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W O W W O W O W W 
+ W W . W O W W W O W W W 
+  W W . W O O W C O W W W 
+ W W . O W O O W W W W W 
+  W W . X O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W O W W O W O W W 
+ W W . W O W W W O W W W 
+  W W . W O O W C O W W W 
+ W W . X W O O W W W W W 
+  W W . . O W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W O W W O W O W W 
+ W W . W O W W W O W W W 
+  W W . W O O W C O W W W 
+ W W . . W O O W W W W W 
+  W W . . X W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W O W W O W O W W 
+ W W . W O W W W O W W W 
+  W W . W O O W C O W W W 
+ W W . . W X O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W O W W O W O W W 
+ W W . W O W W W O W W W 
+  W W . W X O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W O W W O W O W W 
+ W W . W X W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W O O O O W O W W 
+  W W . W X W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W X O O O W O W W 
+  W W . W . W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W O W W O O W W W 
+ W W . W . X O O W O W W 
+  W W . W . W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W O O W W O O W W 
+  W W . W X W W O O W W W 
+ W W . W . . O O W O W W 
+  W W . W . W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W X O W W O O W W 
+  W W . W . W W O O W W W 
+ W W . W . . O O W O W W 
+  W W . W . W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W O W O O O O W W 
+ W W . W . X W W O O W W 
+  W W . W . W W O O W W W 
+ W W . W . . O O W O W W 
+  W W . W . W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W X W O O O O W W 
+ W W . W . . W W O O W W 
+  W W . W . W W O O W W W 
+ W W . W . . O O W O W W 
+  W W . W . W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W X W O O O O W W 
+ W W . W . . W W O O W W 
+  W W . W . W W O O W W W 
+ W W . W . . O O W O W W 
+  W W . W . W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W . W O O O O W W 
+ W W . W . X W W O O W W 
+  W W . W . W W O O W W W 
+ W W . W . . O O W O W W 
+  W W . W . W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W . W O O O O W W 
+ W W . W . . W W O O W W 
+  W W . W . W W O O W W W 
+ W W . W . . X O W O W W 
+  W W . W . W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W . W O O O O W W 
+ W W . W . . W W O O W W 
+  W W . W . W W O O W W W 
+ W W . W . . . X W O W W 
+  W W . W . W W O W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W . W O O O O W W 
+ W W . W . . W W O O W W 
+  W W . W . W W O O W W W 
+ W W . W . . . . W O W W 
+  W W . W . W W X W O W W 
+ W W . W . W W W O W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W . W O O O O W W 
+ W W . W . . W W O O W W 
+  W W . W . W W O O W W W 
+ W W . W . . . . W O W W 
+  W W . W . W W . W O W W 
+ W W . W . W W W X W W W 
+  W W . W . O W C O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+  W W W W W W W W W W W W 
+ W W W M W W W O O O W W 
+  W W . W . W O O O O W W 
+ W W . W . . W W O O W W 
+  W W . W . W W O O W W W 
+ W W . W . . . . W O W W 
+  W W . W . W W . W O W W 
+ W W . W . W W W . W W W 
+  W W . W . O W S O W W W 
+ W W . . W . O W W W W W 
+  W W . . . W O O O O W W 
+ W W W W W W W W W W W W 
+
+Maze Successful: 
+Solved in 29 steps
+ *
+ *
+ ******************************************************************************
+ * 
+ * 		Bad Data Case 1:
+ * 			- maze is unsolvable - exit is blocked
+ * original maze:
+ *  6 6
+ *  W W W W W W
+ *   W W M W W W
+ *  W W O O O W
+ *   W W W W W W
+ *  W W C W O W
+ *   W W O O W W 
+ *  W W W W W W
+ * 
+ * 
+ * 		output:
+ map loaded: 
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W O O O W W 
+  W W W W W W W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+Now we will try to solve it... 
+
+entry at: 2, 3
+exit at: 5, 3
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W O O O W W 
+  W W W W W W W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W X O O W W 
+  W W W W W W W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . X O W W 
+  W W W W W W W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . X W W 
+  W W W W W W W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . X . W W 
+  W W W W W W W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . . W W 
+  W W W W W W W W 
+ W W W C W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+Maze Unsuccessful: 
+Failed in 4 steps
+
+ ******************************************************************************
+ * 		Bad Data Case 2:
+ * 			- maze is unsolvable - no exit is found 
+ * 	original maze:
+ *  6 6
+ *	W W W W W W
+ *	 W W M W W W
+ *	W W O O O W
+ *	 W W W W O W
+ *	W W O W O W
+ *	 W W O O W W 
+ *	W W W W W W
+ * 
+ map loaded: 
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W O O O W W 
+  W W W W W O W W 
+ W W W O W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+Now we will try to solve it... 
+
+entry at: 2, 3
+exit at: 0, 0
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W O O O W W 
+  W W W W W O W W 
+ W W W O W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W X O O W W 
+  W W W W W O W W 
+ W W W O W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . X O W W 
+  W W W W W O W W 
+ W W W O W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . X W W 
+  W W W W W O W W 
+ W W W O W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . . W W 
+  W W W W W X W W 
+ W W W O W O W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . . W W 
+  W W W W W . W W 
+ W W W O W X W W 
+  W W W O O W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . . W W 
+  W W W W W . W W 
+ W W W O W . W W 
+  W W W O X W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . . W W 
+  W W W W W . W W 
+ W W W O W . W W 
+  W W W X . W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . . W W 
+  W W W W W . W W 
+ W W W X W . W W 
+  W W W . . W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+=================================================
+         Please press enter to proceed           
+=================================================
+
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . X . W W 
+  W W W W W . W W 
+ W W W . W . W W 
+  W W W . . W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+  W W W W W W W W 
+ W W W W W W W W 
+  W W W M W W W W 
+ W W W . . . W W 
+  W W W W W . W W 
+ W W W . W . W W 
+  W W W . . W W W 
+ W W W W W W W W 
+  W W W W W W W W 
+
+Maze Unsuccessful: 
+Failed in 9 steps
+ */
